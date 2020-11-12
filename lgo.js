@@ -1,4 +1,4 @@
-##`\n【您的互助码shareCode】 ${$.petInfo.shareCode}\n`
+//    `\n【您的互助码shareCode】 ${$.petInfo.shareCode}\n`
 
     
     FruitShareCodes = process.env.FruitShareCodes;
