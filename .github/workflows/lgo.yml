@@ -16,6 +16,6 @@ jobs:
       - name: start ...
         run: python lgo.py
         env:
-          PUSH_KEY: ${{ secrets.PLANT_BEAN_SHARECODES }}
-          PUSH_KEY: ${{ secrets.PETSHARECODES }}
-          PUSH_KEY: ${{ secrets.FruitShareCodes }}:  
+          PLANT_BEAN_SHARECODES: ${{ secrets.PLANT_BEAN_SHARECODES}}
+          PETSHARECODES: ${{ secrets.PETSHARECODES}}
+          FruitShareCodes: ${{ secrets.FruitShareCodes}}
