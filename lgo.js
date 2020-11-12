@@ -1,3 +1,4 @@
+   fuction(){ 
     console.log(`您的cookie选择的是用换行隔开\n`);
     CookieJDs = process.env.JD_COOKIE.split('\n');
 
@@ -8,4 +9,5 @@
     PETSHARECODES = process.env.PETSHARECODES;
 
     console.log(`种豆得豆互助码`);
-    PLANT_BEAN_SHARECODES = process.env.PLANT_BEAN_SHARECODES;
+    PLANT_BEAN_SHARECODES = process.env.PLANT_BEAN_SHARECODES
+   }
