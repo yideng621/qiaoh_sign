@@ -1,8 +1,6 @@
 name: log.js
 on:
   push:
-    branches:
-      - master
   schedule:
        - cron: '11 0-1 * * *'
 
