@@ -3,7 +3,7 @@
 import os
 
 
-FruitShareCodes=os.environ["FruitShareCodes"]
+FruitShareCodes=os.environ["FruitShareCodes"].split("&")
 print("您的东东农场互助码")
 print(FruitShareCodes)
 
