@@ -18,4 +18,4 @@ jobs:
           PLANT_BEAN_SHARECODES: ${{ secrets.PLANT_BEAN_SHARECODES}}
           PETSHARECODES: ${{ secrets.PETSHARECODES}}
           FruitShareCodes: ${{ secrets.FruitShareCodes}}
-      run: python lgo.py
+        run: python qiaoh_sign/lgo.py
