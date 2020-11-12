@@ -2,7 +2,6 @@ name: jd_joy_steal
 
 on:
   workflow_dispatch:
-  schedule:
   watch:
     types: started
   repository_dispatch:
