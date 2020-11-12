@@ -1,15 +1,8 @@
-//    `\n【您的互助码shareCode】 ${$.petInfo.shareCode}\n`
 
-    
-    var FruitShareCodes = process.env.FruitShareCodes;
-    console.log(`\n您的东东农场互助码 \n`);
-    console.log(FruitShareCodes);
 
-    
-    var PETSHARECODES = process.env.PETSHARECODES;
-    console.log(`\n您的东东萌宠互助码\n`);
-    console.log(PETSHARECODES);
+import os
 
-    console.log(`\n种豆得豆互助码 \n`);
-    var PLANT_BEAN_SHARECODES = process.env.PLANT_BEAN_SHARECODES;
-    console.log(PLANT_BEAN_SHARECODES);
+
+print("您的东东农场互助码"+os.environ["FruitShareCodes"])
+print("您的东东萌宠互助码"+os.environ["PETSHARECODES"])
+print("您的种豆得豆互助码"+os.environ["PLANT_BEAN_SHARECODES"])
