@@ -6,6 +6,7 @@ on:
   schedule:
        - cron: '11 0-1 * * *'
 
+
 jobs:
   get_application:
     runs-on: ubuntu-latest
