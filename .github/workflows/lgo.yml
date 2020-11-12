@@ -1,39 +1,21 @@
-name: cha kan
-
+name: log.js
 on:
-  workflow_dispatch:
-    schedule:
-    - cron: '1 1 1 1 *'
-    
-  watch:
-    types: started
-  repository_dispatch:
-    types: lgo
-jobs:
-  build:
+  push:
+    branches:
+  schedule:
+       - cron: '11 0-1 * * *'
 
+jobs:
+  get_application:
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        #with:
-         # repository: lxk0301/scripts
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v1
+      - uses: actions/setup-python@v2
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: Cache node_modules
-        uses: actions/cache@v2 # 使用 GitHub 官方的缓存 Action。
+          python-version: '3.x'
+      - name: start ...
+        run: python lgo.py
         env:
-          cache-name: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
-      - name: npm install
-        run: |
-          npm install
-      - name: '运行 【查看log】'
-        run: |
-          node lgo.js
-       
+          PUSH_KEY: ${{ secrets.PLANT_BEAN_SHARECODES }}
+          PUSH_KEY: ${{ secrets.PETSHARECODES }}
+          PUSH_KEY: ${{ secrets.FruitShareCodes }}:  
