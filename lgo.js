@@ -1,7 +1,4 @@
 
-    console.log(`您的cookie选择的是用换行隔开\n`);
-    CookieJDs = process.env.JD_COOKIE.split('\n');
-
     console.log(`您的东东农场互助码`);
     FruitShareCodes = process.env.FruitShareCodes;
 
