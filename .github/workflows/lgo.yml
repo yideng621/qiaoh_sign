@@ -2,6 +2,9 @@ name: cha kan
 
 on:
   workflow_dispatch:
+    schedule:
+    - cron: '1 1 1 1 *'
+    
   watch:
     types: started
   repository_dispatch:
