@@ -13,9 +13,9 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.x'
-      - name: start ...
-        run: python lgo.py
+      - name: start ...        
         env:
           PLANT_BEAN_SHARECODES: ${{ secrets.PLANT_BEAN_SHARECODES}}
           PETSHARECODES: ${{ secrets.PETSHARECODES}}
           FruitShareCodes: ${{ secrets.FruitShareCodes}}
+      run: python lgo.py
