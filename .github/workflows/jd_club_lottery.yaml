@@ -1,4 +1,4 @@
-name: 抽京豆
+name: jd_club_lottery 抽京豆 
 
 on:
     workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
                   npm install
             - name: "运行【抽京豆】"
               run: |
-                  node onlyOneExecute.js
+                  node jd_club_lottery.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE || github.event.client_payload.JD_COOKIE }}
                   JD_DEBUG: ${{ secrets.JD_DEBUG || github.event.client_payload.JD_DEBUG }}
