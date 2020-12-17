@@ -1,4 +1,4 @@
-name: 京喜签到
+name: jd_jingxi 京喜签到
 
 on:
     workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
                   npm install
             - name: "运行【京喜每日签到】"
               run: |
-                  node onlyOneExecute.js
+                  node jd_jingxi.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE || github.event.client_payload.JD_COOKIE }}
                   JD_DEBUG: ${{ secrets.JD_DEBUG || github.event.client_payload.JD_DEBUG }}
