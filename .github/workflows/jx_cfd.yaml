@@ -1,4 +1,4 @@
-name: 京喜财富岛
+name: jx_cfd 京喜财富岛
 
 on:
     workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
                   npm install
             - name: "运行【京喜财富岛】"
               run: |
-                  node onlyOneExecute.js
+                  node jx_cfd.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE || github.event.client_payload.JD_COOKIE }}
                   JD_DEBUG: ${{ secrets.JD_DEBUG || github.event.client_payload.JD_DEBUG }}
