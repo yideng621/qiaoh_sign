@@ -1,4 +1,4 @@
-name: 点点券
+name: jd_necklace 点点券
 
 on:
     workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
                   npm install
             - name: "运行【点点券】"
               run: |
-                  node onlyOneExecute.js
+                  node jd_necklace.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE || github.event.client_payload.JD_COOKIE }}
                   JD_DEBUG: ${{ secrets.JD_DEBUG || github.event.client_payload.JD_DEBUG }}
