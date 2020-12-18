@@ -6,7 +6,7 @@ name:  jd_jdh 京东健康APP集汪汪卡
 on:
     workflow_dispatch:
     schedule:
-        - cron: "0 17 * * *"
+        - cron: "50 16 * * *"
     watch:
         types: [started]
     repository_dispatch:
