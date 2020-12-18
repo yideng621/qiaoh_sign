@@ -1,4 +1,4 @@
-name: jd_bean_sign.js 京东每日签到
+name: jd_bean_sign
 
 on:
     workflow_dispatch:
@@ -7,7 +7,7 @@ on:
     watch:
         types: [started]
     repository_dispatch:
-        types: jd_bean_sign.js
+        types: jd_bean_sign
 
 jobs:
     build:
