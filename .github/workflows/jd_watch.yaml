@@ -6,7 +6,7 @@ name:  jd_watch 发现-看一看
 on:
     workflow_dispatch:
     schedule:
-        - cron: "5,55 17，18 * * *"
+        - cron: "5,55 17,18 * * *"
     watch:
         types: [started]
     repository_dispatch:
