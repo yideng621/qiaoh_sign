@@ -138,7 +138,7 @@ function doTask(itemToken) {
           else{
             console.log(data.retMessage)
           }
-        }
+        } 
       } catch (e) {
         $.logErr(e, resp);
       } finally {
