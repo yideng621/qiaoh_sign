@@ -33,7 +33,7 @@ let helpSelf = false // 循环助力，默认关闭
 let applyJdBean = 0; //疯狂的JOY京豆兑换，目前最小值为2000京豆，默认为 0 不开启京豆兑换
 let cookiesArr = [], cookie = '', message = '';
 const inviteCodes = [
-
+'sfasfdadfassfass@dfasdfadfadfadfd'
 ];
 const randomCount = 0;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
